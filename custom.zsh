@@ -3,22 +3,22 @@
 # Files on the custom/ directory will be automatically loaded by the init
 # script, in alphabetical order.
 
-# Start in sites
+# ----------------------
+# Settings
+# ----------------------
+# Set terminal default open to github location with list
 cd ~/Documents/GitHub; ls -la
 
-#Oh-my-zsh Alias
+# ----------------------
+# OHMYZSH Aliases
+# ----------------------
 alias zsh-custom="code ~/.oh-my-zsh/custom/default.zsh"
 
-#General Alias
+# ----------------------
+# General Aliases
+# ----------------------
 alias hosts="sudo nano /etc/hosts" #open hostname file
 alias github="cd ~/Documents/Github; ls -la"
-
-alias busy='LC_ALL=C tr -c "[:digit:]" " " < /dev/urandom | dd cbs=$COLUMNS conv=unblock | GREP_COLOR="1;32" grep --color "[^ ]"'
-
-function slopen {
-	code ~/Documents/Github/$1;
-	cd ~/Documents/Github/$1
-}
 
 # ----------------------
 # Git Aliases
@@ -64,3 +64,8 @@ alias greset='git reset HEAD^'
 alias sb='npm run storybook'
 alias nrs='npm run start'
 alias dockspace='defaults write com.apple.dock persistent-apps -array-add "{"tile-type"="spacer-tile";}"; killall Dock'
+
+# ----------------------
+# Just for fun
+# ----------------------
+alias lookbusy='LC_ALL=C tr -c "[:digit:]" " " < /dev/urandom | dd cbs=$COLUMNS conv=unblock | GREP_COLOR="1;32" grep --color "[^ ]"'
