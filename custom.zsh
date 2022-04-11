@@ -4,12 +4,6 @@
 # script, in alphabetical order.
 
 # ----------------------
-# Settings
-# ----------------------
-# Set terminal default open to github location with list
-cd ~/Documents/GitHub; ls -la
-
-# ----------------------
 # OHMYZSH Aliases
 # ----------------------
 alias zsh-custom="code ~/.oh-my-zsh/custom/default.zsh"
